@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -44,7 +44,11 @@ export default function CoursePage({ params }: { params: Params }) {
   }
 
   if (!course) {
-    notFound();
+    return (
+      <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-50 to-gray-100">
+        <div className="text-3xl font-bold text-neutral-900">Course not found</div>
+      </div>
+    )
   }
 
   return (
