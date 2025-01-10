@@ -49,8 +49,8 @@ export function Navbar() {
                     {!showSearch ? (
                         <>
                             <Link href='/' className="flex items-center space-x-4">
-                                <Image src={learning} alt="Finder" width={40} height={40} />
-                                <span className="text-xl font-bold">Finder</span>
+                                <Image src={learning} alt="FinderX" width={40} height={40} />
+                                <span className="text-xl font-bold">FinderX</span>
                             </Link>
                             <div className="flex items-center space-x-2">
                                 <Button variant="ghost" size="icon" onClick={() => setShowSearch(true)}>

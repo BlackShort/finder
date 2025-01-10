@@ -1,6 +1,6 @@
-# Finder
+# FinderX
 
-**Finder** is a fast and efficient tool designed to help users quickly locate files and directories on their systems. With its intuitive interface and advanced search capabilities, Finder streamlines the process of searching for files, saving time and effort.
+**FinderX** is a fast and efficient tool designed to help users quickly locate files and directories on their systems. With its intuitive interface and advanced search capabilities, FinderX streamlines the process of searching for files, saving time and effort.
 
 ## Features
 
@@ -12,7 +12,7 @@
 
 ## Installation
 
-To get started with **Finder**, follow these steps:
+To get started with **FinderX**, follow these steps:
 
 1. 📥 **Clone the repository** to your local machine:
     ```bash
@@ -35,11 +35,11 @@ After installation, you can start the application by running the following comma
 npm run dev
 ```
 
-This will start the development server, and you can access Finder in your browser at `http://localhost:3000`.
+This will start the development server, and you can access FinderX in your browser at `http://localhost:3000`.
 
 ## Contributing
 
-We welcome contributions to improve Finder! To contribute, please follow these steps:
+We welcome contributions to improve FinderX! To contribute, please follow these steps:
 
 1. 🍴 **Fork the repository** to your own GitHub account.
 2. 🌱 **Create a new branch** for your feature (`git checkout -b feature-branch`).
