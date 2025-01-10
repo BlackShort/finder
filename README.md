@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finder
 
-## Getting Started
+**Finder** is a fast and efficient tool designed to help users quickly locate files and directories on their systems. With its intuitive interface and advanced search capabilities, Finder streamlines the process of searching for files, saving time and effort.
 
-First, run the development server:
+## Features
+
+- ⚡ **Blazing Fast Search**: Locate files and directories instantly using optimized search algorithms.
+- 🖥️ **Intuitive Interface**: Simple, user-friendly interface for easy navigation and quick search.
+- 🔍 **Customizable Filters**: Apply filters to refine search results based on file type, size, and more.
+- 🌍 **Cross-Platform Support**: Works seamlessly on multiple operating systems (Windows, macOS, Linux).
+- 🔄 **Real-Time Updates**: Automatically refreshes search results as files and directories are added or removed.
+
+## Installation
+
+To get started with **Finder**, follow these steps:
+
+1. 📥 **Clone the repository** to your local machine:
+    ```bash
+    git clone https://github.com/BlackShort/finder.git
+    ```
+2. 🗂️ **Navigate to the project directory**:
+    ```bash
+    cd finder
+    ```
+3. ⚙️ **Install the required dependencies**:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+After installation, you can start the application by running the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server, and you can access Finder in your browser at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We welcome contributions to improve Finder! To contribute, please follow these steps:
 
-## Learn More
+1. 🍴 **Fork the repository** to your own GitHub account.
+2. 🌱 **Create a new branch** for your feature (`git checkout -b feature-branch`).
+3. ✏️ **Make your changes** and commit them with a descriptive message (`git commit -m 'Add new feature'`).
+4. 📤 **Push your changes** to your forked repository (`git push origin feature-branch`).
+5. 🔀 **Create a Pull Request** to merge your changes into the main repository.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the **MIT License**. For more details, see the [LICENSE](LICENSE) file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For questions, feedback, or inquiries, feel free to reach out at [priyanshuk.7374@gmail.com](mailto:priyanshuk.7374@gmail.com).
