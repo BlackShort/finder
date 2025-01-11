@@ -54,6 +54,7 @@ export default function CourseRequestForm() {
                 description: "There was a problem submitting your request. Please try again.",
                 variant: "destructive",
             })
+            console.log(error);
         } finally {
             setIsSubmitting(false)
         }

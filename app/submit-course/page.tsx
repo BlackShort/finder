@@ -89,7 +89,8 @@ export default function CourseSubmissionForm() {
                 title: "Error",
                 description: "There was a problem submitting the course. Please try again.",
                 variant: "destructive",
-            })
+            });
+            console.log(error);
         } finally {
             setIsSubmitting(false)
         }
