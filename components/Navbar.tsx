@@ -3,10 +3,15 @@
 import { useState } from 'react'
 import { SearchBar } from './SearchBar'
 import { Button } from "@/components/ui/button"
-import { Search, User } from 'lucide-react'
+import { FileText, Search, User } from 'lucide-react'
 import Image from 'next/image'
 import learning from '@/app/icon.png'
 import Link from 'next/link'
+import {
+    Dialog,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+import { CourseModal } from './CourseModal'
 
 export function Navbar() {
     const [showSearch, setShowSearch] = useState(false);
@@ -43,7 +48,7 @@ export function Navbar() {
     // };
 
     return (
-        <nav className="sticky top-0 z-50 rounded-lg text-primary-foreground py-3 px-3 bg-gradient-to-r from-blue-50 to-gray-100 backdrop-blur transition-all duration-300 ease-in-out">
+        <nav className="sticky top-0 z-50 rounded-lg text-primary-foreground py-3 px-3 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out">
             <div className="bg-primary rounded-lg mx-auto px-3 py-3">
                 <div className="flex items-center justify-between">
                     {!showSearch ? (
@@ -53,10 +58,20 @@ export function Navbar() {
                                 <span className="text-xl font-bold">FinderX</span>
                             </Link>
                             <div className="flex items-center space-x-2">
-                                <Button variant="ghost" size="icon" onClick={() => setShowSearch(true)}>
+                                <Dialog>
+                                    <DialogTrigger asChild>
+                                        <Button variant="ghost" size="sm" className="hidden md:flex">
+                                            <FileText className="h-5 w-5" />
+                                            Resource
+                                        </Button>
+                                    </DialogTrigger>
+                                    <CourseModal />
+                                </Dialog>
+
+                                <Button variant="ghost" size="sm" onClick={() => setShowSearch(true)}>
                                     <Search className="h-7 w-7" />
                                 </Button>
-                                <Button variant="ghost" size="icon">
+                                <Button variant="ghost" size="sm">
                                     <User className="h-7 w-7" />
                                 </Button>
                             </div>

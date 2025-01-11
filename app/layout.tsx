@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <SearchProvider>
           <Navbar />
-          <main className='pt-4 pb-8'>
+          <main className='pt-4 pb-8 bg-gray-100'>
             {children}
           </main>
         </SearchProvider>
