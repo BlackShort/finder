@@ -6,8 +6,11 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { PlusIcon, TrashIcon } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
 
 export default function CourseSubmissionForm() {
+    const { toast } = useToast()
+    const [isSubmitting, setIsSubmitting] = useState(false)
     const [formData, setFormData] = useState({
         courseName: "",
         courseDescription: "",
@@ -47,16 +50,55 @@ export default function CourseSubmissionForm() {
         setFormData({ ...formData, [fieldName]: updatedArray })
     }
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        console.log("Form submitted:", formData)
-    }
+        setIsSubmitting(true)
 
+        try {
+            const dataToSubmit = {
+                ...formData,
+                access_key: process.env.WEB3FORMS_ACCESS_KEY,
+            };
+
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(dataToSubmit),
+            });
+            const result = await response.json();
+            if (result.success) {
+                toast({
+                    title: "Course submitted successfully",
+                    description: "Thank you for your submission. We'll review it shortly.",
+                })
+                setFormData({
+                    courseName: "",
+                    courseDescription: "",
+                    contentOutline: [""],
+                    resources: [""],
+                    careerOpportunities: [""],
+                })
+            } else {
+                throw new Error('Failed to submit course')
+            }
+        } catch (error) {
+            toast({
+                title: "Error",
+                description: "There was a problem submitting the course. Please try again.",
+                variant: "destructive",
+            })
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
     return (
         <div className="flex items-center justify-center h-screen">
             <form
                 onSubmit={handleSubmit}
-                className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl space-y-6 border border-gray-200"
+                className="shadow-lg rounded-lg p-8 w-full max-w-xl space-y-6 border border-gray-200"
             >
                 <h1 className="text-3xl font-bold text-gray-800 text-center">
                     Course Submission
@@ -198,8 +240,10 @@ export default function CourseSubmissionForm() {
                 </div>
 
                 {/* Submit Button */}
-                <Button type="submit" className="w-full">
-                    Submit Course
+                <Button type="submit"
+                    disabled={isSubmitting}
+                    className="w-full">
+                    {isSubmitting ? 'Submitting...' : 'Submit Course'}
                 </Button>
             </form>
         </div>

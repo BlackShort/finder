@@ -27,7 +27,7 @@ export default function CourseRequestForm() {
         try {
             const dataToSubmit = {
                 ...formData,
-                access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+                access_key: process.env.WEB3FORMS_ACCESS_KEY,
             };
 
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -42,7 +42,7 @@ export default function CourseRequestForm() {
             if (result.success) {
                 toast({
                     title: "Course request submitted",
-                    description: "Thank you for your request. We'll get back to you soon!",
+                    description: "Thank you for your request. We&apos;ll get back to you soon!",
                 })
                 setFormData({ name: '', email: '', courseDetails: '' })
             } else {
@@ -69,7 +69,7 @@ export default function CourseRequestForm() {
                 <div>
                     <h1 className="text-2xl font-semibold text-gray-800 text-center">Course Request Form</h1>
                     <p className="text-gray-600 text-center">
-                        Let us know about the course you'd like to see!
+                        Let us know about the course you&apos;d like to see!
                     </p>
                 </div>
 
