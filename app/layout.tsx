@@ -9,10 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Finder",
   description: "Find courses and resources to help you learn and grow",
-  icons: [
-    { rel: "icon", url: "favicon.png" },
-    { rel: "apple-touch-icon", url: "favicon.png" },
-  ],
 };
 
 export default function RootLayout({
@@ -25,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <SearchProvider>
           <Navbar />
-          <main>
+          <main className='pt-4 pb-8'>
             {children}
           </main>
         </SearchProvider>

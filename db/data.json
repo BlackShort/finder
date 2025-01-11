@@ -1,0 +1,717 @@
+[
+    {
+    "title": "Introduction to Web Development",
+    "description": "Learn the basics of HTML, CSS, and JavaScript to build modern websites.",
+    "contentOutline": [
+      "HTML fundamentals",
+      "CSS styling",
+      "JavaScript basics",
+      "Responsive design"
+    ],
+    "resources": [
+      "https://developer.mozilla.org/en-US/docs/Learn",
+      "https://www.w3schools.com/html/",
+      "https://www.freecodecamp.org/learn/"
+    ],
+    "timeline": "8 weeks",
+    "careerOpportunities": [
+      "Junior Web Developer",
+      "Frontend Developer",
+      "Web Designer"
+    ],
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Web Development"
+    ],
+    "imageUrl": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg"
+  },
+  {
+    "title": "React",
+    "description": "Learn React for building interactive UIs and Node.js for creating robust server-side applications.",
+    "contentOutline": [
+      "Introduction to React and JSX",
+      "State and Props Management",
+      "Building REST APIs with Node.js",
+      "Database Integration with MongoDB",
+      "Full-Stack Project Development"
+    ],
+    "resources": [
+      "https://reactjs.org/",
+      "https://nodejs.dev/",
+      "https://www.udemy.com/course/react-nodejs-fullstack/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "React Developer",
+      "Full-Stack Developer",
+      "Backend Engineer"
+    ],
+    "tags": [
+      "React",
+      "Node.js",
+      "Full-Stack Development",
+      "JavaScript",
+      "MongoDB"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/ad/e1/56/ade156fec38b30abb8d59f5a1235752c.jpg"
+  },
+  {
+    "title": "Next.js",
+    "description": "Master Next.js to build scalable and performant web applications.",
+    "contentOutline": [
+      "React hooks",
+      "State management",
+      "Server-side rendering",
+      "API routes"
+    ],
+    "resources": [
+      "https://reactjs.org/docs/getting-started.html",
+      "https://nextjs.org/docs",
+      "https://redux.js.org/introduction/getting-started"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "React Developer",
+      "Full Stack Developer",
+      "Frontend Architect"
+    ],
+    "tags": [
+      "React",
+      "Next.js",
+      "Server-Side Rendering",
+      "Web Development"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/a4/52/ea/a452eae371f079b141494c5aff07a140.jpg"
+  },
+  {
+    "title": "AI & Machine Learning Basics",
+    "description": "Understand the fundamentals of AI and Machine Learning through hands-on projects.",
+    "contentOutline": [
+      "Introduction to AI",
+      "Supervised learning",
+      "Unsupervised learning",
+      "Real-world applications"
+    ],
+    "resources": [
+      "https://www.coursera.org/learn/machine-learning",
+      "https://www.tensorflow.org/resources/learn-ml",
+      "https://scikit-learn.org/stable/getting_started.html"
+    ],
+    "timeline": "8 weeks",
+    "careerOpportunities": [
+      "AI Developer",
+      "Machine Learning Engineer",
+      "Data Scientist"
+    ],
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Data Science"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/f7/8c/ef/f78cef0dd20b57db43cc6c93cc4e7303.jpg"
+  },
+  {
+    "title": "MERN Stack",
+    "description": "Build end-to-end web applications using MongoDB, Express, React, and Node.js.",
+    "contentOutline": [
+      "Frontend with React",
+      "Backend with Node.js",
+      "Database with MongoDB",
+      "Deploying MERN apps"
+    ],
+    "resources": [
+      "https://www.mongodb.com/docs/",
+      "https://expressjs.com/",
+      "https://reactjs.org/docs/getting-started.html",
+      "https://nodejs.org/en/docs/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "Full Stack Developer",
+      "MERN Stack Developer"
+    ],
+    "tags": [
+      "MERN",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Full-Stack Development"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/c4/14/db/c414dbebbd15f8ce3dc6b01749810ec6.jpg"
+  },
+  {
+    "title": "Angular",
+    "description": "Build end-to-end web applications using MongoDB, Express, React, and Node.js.",
+    "contentOutline": [
+      "Frontend with React",
+      "Backend with Node.js",
+      "Database with MongoDB",
+      "Deploying MERN apps"
+    ],
+    "resources": [
+      "https://www.mongodb.com/docs/",
+      "https://expressjs.com/",
+      "https://reactjs.org/docs/getting-started.html",
+      "https://nodejs.org/en/docs/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "Full Stack Developer",
+      "MERN Stack Developer"
+    ],
+    "tags": [
+      "MEAN",
+      "Fullstack",
+      "Web Development"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/82/6d/4c/826d4c79b28585904786bbd326490e06.jpg"
+  },
+  {
+    "title": "Data Science with Python",
+    "description": "Analyze and visualize data using Python libraries like Pandas and Matplotlib.",
+    "contentOutline": [
+      "Data manipulation",
+      "Data visualization",
+      "Statistical analysis",
+      "Machine Learning basics"
+    ],
+    "resources": [
+      "https://pandas.pydata.org/docs/",
+      "https://matplotlib.org/stable/contents.html",
+      "https://numpy.org/doc/stable/"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Data Analyst",
+      "Data Scientist",
+      "BI Analyst"
+    ],
+    "tags": [
+      "Data Science",
+      "Python",
+      "Data Visualization",
+      "Analysis",
+      "Machine Learning"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/2f/13/f5/2f13f5ab03e31c4d420c598b061ddbc5.jpg"
+  },
+  {
+    "title": "Bootstrap",
+    "description": "Design and build responsive websites using Bootstrap.",
+    "contentOutline": [
+      "Bootstrap grid system",
+      "Customizing themes",
+      "Responsive utilities",
+      "Best practices"
+    ],
+    "resources": [
+      "https://getbootstrap.com/docs/",
+      "https://www.w3schools.com/bootstrap4/",
+      "https://www.freecodecamp.org/learn/responsive-web-design/"
+    ],
+    "timeline": "6 weeks",
+    "careerOpportunities": [
+      "Frontend Developer",
+      "Web Designer"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Responsive Design",
+      "Web Design",
+      "Frontend Development"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/d4/3f/73/d43f73f7654a4f2e5e81f201589fab2c.jpg"
+  },
+  {
+    "title": "Responsive Design",
+    "description": "Design and build responsive websites using Bootstrap.",
+    "contentOutline": [
+      "Bootstrap grid system",
+      "Customizing themes",
+      "Responsive utilities",
+      "Best practices"
+    ],
+    "resources": [
+      "https://getbootstrap.com/docs/",
+      "https://www.w3schools.com/bootstrap4/",
+      "https://www.freecodecamp.org/learn/responsive-web-design/"
+    ],
+    "timeline": "6 weeks",
+    "careerOpportunities": [
+      "Frontend Developer",
+      "Web Designer"
+    ],
+    "tags": [
+      "Bootstrap",
+      "Web Design",
+      "Responsive"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/76/43/6a/76436acbd1eb3f79d29137950e4aec86.jpg"
+  },
+  {
+    "title": "Cloud Computing",
+    "description": "Understand the basics of cloud services and platforms like AWS and Azure.",
+    "contentOutline": [
+      "Cloud concepts",
+      "Deployment models",
+      "Scalability and reliability",
+      "Cost management"
+    ],
+    "resources": [
+      "https://aws.amazon.com/what-is-cloud-computing/",
+      "https://learn.microsoft.com/en-us/azure/",
+      "https://cloud.google.com/learn"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Cloud Engineer",
+      "DevOps Specialist"
+    ],
+    "tags": [
+      "Cloud Computing",
+      "AWS",
+      "Azure",
+      "Google Cloud",
+      "DevOps"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/d3/f7/96/d3f7964ff139e349164b234919a53433.jpg"
+  },
+  {
+    "title": "AWS ",
+    "description": "Understand the basics of cloud services and platforms like AWS and Azure.",
+    "contentOutline": [
+      "Cloud concepts",
+      "Deployment models",
+      "Scalability and reliability",
+      "Cost management"
+    ],
+    "resources": [
+      "https://aws.amazon.com/what-is-cloud-computing/",
+      "https://learn.microsoft.com/en-us/azure/",
+      "https://cloud.google.com/learn"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Cloud Engineer",
+      "DevOps Specialist"
+    ],
+    "tags": [
+      "Cloud",
+      "AWS",
+      "Azure"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/98/1e/7f/981e7fc62d38495de6f819af40ed4b72.jpg"
+  },
+  {
+    "title": "Azure",
+    "description": "Understand the basics of cloud services and platforms like AWS and Azure.",
+    "contentOutline": [
+      "Cloud concepts",
+      "Deployment models",
+      "Scalability and reliability",
+      "Cost management"
+    ],
+    "resources": [
+      "https://aws.amazon.com/what-is-cloud-computing/",
+      "https://learn.microsoft.com/en-us/azure/",
+      "https://cloud.google.com/learn"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Cloud Engineer",
+      "DevOps Specialist"
+    ],
+    "tags": [
+      "Cloud",
+      "AWS",
+      "Azure"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/11/a3/d7/11a3d7b1c120e0739b4f13a05869bfda.jpg"
+  },
+  {
+    "title": "Google Cloud Platform",
+    "description": "Understand the basics of cloud services and platforms like AWS and Azure.",
+    "contentOutline": [
+      "Cloud concepts",
+      "Deployment models",
+      "Scalability and reliability",
+      "Cost management"
+    ],
+    "resources": [
+      "https://aws.amazon.com/what-is-cloud-computing/",
+      "https://learn.microsoft.com/en-us/azure/",
+      "https://cloud.google.com/learn"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Cloud Engineer",
+      "DevOps Specialist"
+    ],
+    "tags": [
+      "Cloud",
+      "AWS",
+      "Azure",
+      "Google Cloud"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/53/4e/12/534e124b74fafbf68b58c5d6f35422ff.jpg"
+  },
+  {
+    "title": "Operating System",
+    "description": "Explore the fundamental concepts of operating systems, including process management, memory allocation, file systems, and concurrency.",
+    "contentOutline": [
+      "Introduction to Operating Systems",
+      "Process and Thread Management",
+      "Memory Management and Virtual Memory",
+      "File Systems and Storage",
+      "Concurrency and Synchronization"
+    ],
+    "resources": [
+      "https://en.wikipedia.org/wiki/Operating_system",
+      "https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/",
+      "https://www.coursera.org/learn/os-pku"
+    ],
+    "timeline": "8 weeks",
+    "careerOpportunities": [
+      "System Administrator",
+      "Kernel Developer",
+      "OS Engineer"
+    ],
+    "tags": [
+      "Operating System",
+      "Processes",
+      "Concurrency",
+      "Memory",
+      "File Systems"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/12/43/97/124397f3d876b787facfc26574926b41.jpg"
+  },
+  {
+    "title": "Cyber Security",
+    "description": "Learn how to protect systems and networks from cyber threats, secure data, and implement best practices for online safety.",
+    "contentOutline": [
+      "Introduction to Cyber Security",
+      "Threats and Vulnerabilities",
+      "Encryption and Cryptography",
+      "Network Security",
+      "Incident Response and Recovery"
+    ],
+    "resources": [
+      "https://www.cybrary.it/",
+      "https://www.coursera.org/specializations/cyber-security",
+      "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Cyber Security Analyst",
+      "Penetration Tester",
+      "Security Engineer"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Encryption",
+      "Network Security",
+      "Hacking",
+      "Data Protection"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/fb/bc/97/fbbc97ad7d9865aa65b42378d75ccb0b.jpg"
+  },
+  {
+    "title": "C++ Programming",
+    "description": "Master the fundamentals of C++ programming, including object-oriented programming and advanced features for system-level programming.",
+    "contentOutline": [
+      "Introduction to C++",
+      "Data Types and Control Structures",
+      "Functions and Pointers",
+      "Object-Oriented Programming",
+      "Advanced Topics: Templates and STL"
+    ],
+    "resources": [
+      "https://cplusplus.com/",
+      "https://www.geeksforgeeks.org/c-plus-plus/",
+      "https://www.udemy.com/course/beginning-c-plus-plus-programming/"
+    ],
+    "timeline": "6 weeks",
+    "careerOpportunities": [
+      "C++ Developer",
+      "Game Developer",
+      "System Programmer"
+    ],
+    "tags": [
+      "C++",
+      "Programming",
+      "OOP",
+      "Templates",
+      "STL"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/e4/19/da/e419da4e7bc891cb82c4b8c1695286b7.jpg"
+  },
+  {
+    "title": "Python Programming",
+    "description": "Learn Python programming for web development, data analysis, machine learning, and scripting.",
+    "contentOutline": [
+      "Python Basics: Syntax and Data Types",
+      "Control Structures and Functions",
+      "Object-Oriented Programming in Python",
+      "Working with Libraries and APIs",
+      "Introduction to Data Analysis and Machine Learning"
+    ],
+    "resources": [
+      "https://docs.python.org/3/tutorial/",
+      "https://www.kaggle.com/learn/python",
+      "https://www.codecademy.com/learn/learn-python-3"
+    ],
+    "timeline": "8 weeks",
+    "careerOpportunities": [
+      "Python Developer",
+      "Data Scientist",
+      "Machine Learning Engineer"
+    ],
+    "tags": [
+      "Python",
+      "Programming",
+      "Data Analysis",
+      "ML",
+      "Automation"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/65/a2/46/65a2460a242975f70b6c58d2eb9c2134.jpg"
+  },
+  {
+    "title": "HTML, CSS, JavaScript",
+    "description": "Build visually appealing and responsive websites by mastering HTML for structure and CSS for styling.",
+    "contentOutline": [
+      "HTML Basics: Tags and Attributes",
+      "CSS Basics: Selectors and Properties",
+      "Building Layouts with Flexbox and Grid",
+      "Responsive Design Principles",
+      "CSS Animations and Transitions"
+    ],
+    "resources": [
+      "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+      "https://www.w3schools.com/css/",
+      "https://css-tricks.com/"
+    ],
+    "timeline": "6 weeks",
+    "careerOpportunities": [
+      "Frontend Developer",
+      "Web Designer",
+      "UI Developer"
+    ],
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Frontend",
+      "Web Design",
+      "Responsive"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/8a/3b/f9/8a3bf9025803334c3e2c8cc74b5787b3.jpg"
+  },
+  {
+    "title": "Data Structures and Algorithms",
+    "description": "Understand essential data structures and algorithms for problem-solving and competitive programming.",
+    "contentOutline": [
+      "Arrays and Linked Lists",
+      "Stacks and Queues",
+      "Trees and Graphs",
+      "Sorting and Searching Algorithms",
+      "Dynamic Programming"
+    ],
+    "resources": [
+      "https://www.geeksforgeeks.org/data-structures/",
+      "https://leetcode.com/problemset/all/",
+      "https://www.udemy.com/course/data-structures-and-algorithms-bootcamp/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "Software Engineer",
+      "Backend Developer",
+      "Algorithm Specialist"
+    ],
+    "tags": [
+      "DSA",
+      "Algorithms",
+      "Problem-Solving",
+      "Programming"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/de/5e/f7/de5ef739c95a4d8f34798af16768a894.jpg"
+  },
+  {
+    "title": "Database Management Systems (DBMS)",
+    "description": "Learn the principles of database systems, SQL, and database design for managing structured data.",
+    "contentOutline": [
+      "Introduction to DBMS",
+      "Relational Database Concepts",
+      "SQL Basics and Advanced Queries",
+      "Normalization and Indexing",
+      "Database Security and Transactions"
+    ],
+    "resources": [
+      "https://www.geeksforgeeks.org/dbms/",
+      "https://www.w3schools.com/sql/",
+      "https://www.udemy.com/course/database-management-systems/"
+    ],
+    "timeline": "8 weeks",
+    "careerOpportunities": [
+      "Database Administrator",
+      "Data Engineer",
+      "SQL Developer"
+    ],
+    "tags": [
+      "DBMS",
+      "SQL",
+      "Database Design",
+      "Data Management"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/be/ca/fc/becafcfdc4e8bc1a837e3291456fee0f.jpg"
+  },
+  {
+    "title": "Computer Networks",
+    "description": "Explore the principles of computer networks, including protocols, architectures, and network security.",
+    "contentOutline": [
+      "Network Fundamentals",
+      "TCP/IP and OSI Models",
+      "Routing and Switching",
+      "Network Security and Firewalls",
+      "Cloud and Wireless Networking"
+    ],
+    "resources": [
+      "https://www.coursera.org/learn/computer-networking",
+      "https://www.geeksforgeeks.org/computer-network-tutorials/",
+      "https://www.udemy.com/course/computer-networking/"
+    ],
+    "timeline": "10 weeks",
+    "careerOpportunities": [
+      "Network Engineer",
+      "Cybersecurity Analyst",
+      "Cloud Architect"
+    ],
+    "tags": [
+      "Networking",
+      "TCP/IP",
+      "Security",
+      "Routing"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/1d/a7/c6/1da7c67382d7d7ae3d516fd5db8b5807.jpg"
+  },
+  {
+    "title": "Embedded Systems",
+    "description": "Dive into embedded systems and microcontroller programming for hardware-software integration.",
+    "contentOutline": [
+      "Introduction to Embedded Systems",
+      "Microcontrollers and Peripherals",
+      "Real-Time Operating Systems (RTOS)",
+      "Programming in C for Embedded Systems",
+      "IoT Integration"
+    ],
+    "resources": [
+      "https://www.coursera.org/specializations/embedded-systems",
+      "https://www.udemy.com/course/embedded-systems/",
+      "https://www.geeksforgeeks.org/introduction-to-embedded-systems/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "Embedded Systems Engineer",
+      "IoT Developer",
+      "Firmware Engineer"
+    ],
+    "tags": [
+      "Embedded",
+      "Microcontroller",
+      "IoT",
+      "RTOS"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/2d/51/e2/2d51e2b014429304b4b9bb7dd4865161.jpg"
+  },
+  {
+    "title": "Artificial Intelligence",
+    "description": "Explore the foundations of artificial intelligence and its real-world applications.",
+    "contentOutline": [
+      "Introduction to AI",
+      "Search Algorithms",
+      "Machine Learning Basics",
+      "Natural Language Processing",
+      "AI Ethics and Future Trends"
+    ],
+    "resources": [
+      "https://www.coursera.org/learn/introduction-to-ai",
+      "https://www.udemy.com/course/artificial-intelligence-az/",
+      "https://www.ibm.com/cloud/learn/what-is-artificial-intelligence"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "AI Specialist",
+      "ML Engineer",
+      "Data Scientist"
+    ],
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "NLP",
+      "Ethics"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/ec/26/2a/ec262a173e4afe5b147164afb4905e93.jpg"
+  },
+  {
+    "title": "Robotics and Automation",
+    "description": "Learn about robotics systems, automation, and their industrial applications.",
+    "contentOutline": [
+      "Introduction to Robotics",
+      "Control Systems and Sensors",
+      "Kinematics and Dynamics",
+      "Programming for Robotics",
+      "Industrial Automation"
+    ],
+    "resources": [
+      "https://www.coursera.org/specializations/robotics",
+      "https://www.udemy.com/course/robotics-and-automation/",
+      "https://www.robotics.org/"
+    ],
+    "timeline": "12 weeks",
+    "careerOpportunities": [
+      "Robotics Engineer",
+      "Automation Specialist",
+      "Control Systems Engineer"
+    ],
+    "tags": [
+      "Robotics",
+      "Automation",
+      "Kinematics",
+      "Sensors"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/5e/15/8c/5e158ccdb84504822c731e646cfdcbdf.jpg"
+  },
+  {
+    "title": "Resume Guide for Engineers",
+    "description": "Learn how to create a compelling and professional resume tailored for engineering roles, highlighting your technical skills and projects effectively.",
+    "contentOutline": [
+      "Understanding the Purpose of a Resume",
+      "Essential Sections of a Resume",
+      "Highlighting Technical Skills and Projects",
+      "Tailoring Resumes for Specific Roles",
+      "Common Mistakes to Avoid"
+    ],
+    "resources": [
+      "https://enhancv.com/",
+      "https://resumeworded.com/",
+      "https://www.jobscan.co/"
+    ],
+    "timeline": "2 weeks",
+    "careerOpportunities": [
+      "Improved chances for Engineering Internships",
+      "Securing Full-Time Engineering Roles",
+      "Standing Out in Competitive Job Markets"
+    ],
+    "tags": [
+      "Resume",
+      "Career",
+      "Engineering",
+      "Professional Development"
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/63/dc/84/63dc8433e79b714f154c38ba3a1c1470.jpg"
+  }
+]

@@ -1,55 +1,27 @@
-import { NextResponse } from 'next/server';
-import Course from '@/models/Course';
-import dbConnect from '@/db/mongodb';
+import { NextResponse } from 'next/server'
+import { getCourse, updateCourse, deleteCourse } from '@/lib/courses'
 
-interface Params {
-  id: string;
-}
-
-export async function GET(req: Request, { params }: { params: Params }) {
-  try {
-    await dbConnect();
-    const course = await Course.findById(params.id);
-    console.log(course);
-    if (course) {
-      return NextResponse.json(course);
-    } else {
-      return NextResponse.json({ error: 'Course not found' }, { status: 404 });
-    }
-  } catch (error) {
-    return NextResponse.json({ error: `Error fetching course: ${error}` }, { status: 500 });
+export async function GET(request: Request, { params }: { params: { id: string } }) {
+  const course = await getCourse(params.id)
+  if (course) {
+    return NextResponse.json(course)
+  } else {
+    return NextResponse.json({ error: 'Course not found' }, { status: 404 })
   }
 }
 
-export async function PUT(req: Request, { params }: { params: Params }) {
-  try {
-    await dbConnect();
-    const updatedCourseData = await req.json();
-    const updatedCourse = await Course.findByIdAndUpdate(
-      params.id,
-      updatedCourseData,
-      { new: true }
-    );
-    if (updatedCourse) {
-      return NextResponse.json(updatedCourse);
-    } else {
-      return NextResponse.json({ error: 'Course not found' }, { status: 404 });
-    }
-  } catch (error) {
-    return NextResponse.json({ error: `Error updating course: ${error}` }, { status: 500 });
+export async function PUT(request: Request, { params }: { params: { id: string } }) {
+  const updatedCourseData = await request.json()
+  const updatedCourse = await updateCourse(params.id, updatedCourseData)
+  if (updatedCourse) {
+    return NextResponse.json(updatedCourse)
+  } else {
+    return NextResponse.json({ error: 'Course not found' }, { status: 404 })
   }
 }
 
-export async function DELETE(req: Request, { params }: { params: Params }) {
-  try {
-    await dbConnect();
-    const deletedCourse = await Course.findByIdAndDelete(params.id);
-    if (deletedCourse) {
-      return NextResponse.json({ message: 'Course deleted successfully' });
-    } else {
-      return NextResponse.json({ error: 'Course not found' }, { status: 404 });
-    }
-  } catch (error) {
-    return NextResponse.json({ error: `Error deleting course: ${error}` }, { status: 500 });
-  }
+export async function DELETE(request: Request, { params }: { params: { id: string } }) {
+  await deleteCourse(params.id)
+  return NextResponse.json({ message: 'Course deleted successfully' })
 }
+

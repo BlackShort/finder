@@ -5,7 +5,7 @@ import { SearchBar } from './SearchBar'
 import { Button } from "@/components/ui/button"
 import { Search, User } from 'lucide-react'
 import Image from 'next/image'
-import learning from '@/app/favicon.png'
+import learning from '@/app/icon.png'
 import Link from 'next/link'
 
 export function Navbar() {
@@ -43,7 +43,7 @@ export function Navbar() {
     // };
 
     return (
-        <nav className="sticky top-0 z-50 rounded-lg text-primary-foreground py-3 px-3 backdrop-blur transition-all duration-300 ease-in-out">
+        <nav className="sticky top-0 z-50 rounded-lg text-primary-foreground py-3 px-3 bg-gradient-to-r from-blue-50 to-gray-100 backdrop-blur transition-all duration-300 ease-in-out">
             <div className="bg-primary rounded-lg mx-auto px-3 py-3">
                 <div className="flex items-center justify-between">
                     {!showSearch ? (

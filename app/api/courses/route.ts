@@ -1,26 +1,31 @@
-import dbConnect from '@/db/mongodb';
-import Course from '@/models/Course';
 import { NextResponse } from 'next/server'
+import { getCourses, addCourse } from '@/lib/courses'
 
-export async function GET() {
-  try {
-    await dbConnect();
-    const courses = await Course.find().limit(20);
-    return NextResponse.json(courses, { status: 200 });
-  } catch (error) {
-    return NextResponse.json({ error: `Error fetching courses ${error}` }, { status: 500 });
-  }
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url)
+  const cursor = searchParams.get('cursor') || ''
+  const limit = parseInt(searchParams.get('limit') || '20', 10)
+  const search = searchParams.get('search') || ''
+
+  const { courses, nextCursor } = await getCourses(cursor, limit, search)
+
+  return NextResponse.json({ courses, nextCursor })
 }
+
 export async function POST(request: Request) {
   try {
-    await dbConnect();
-    const data = await request.json();
-    const course = new Course(data);
+    const courseData = await request.json()
 
+    if (!courseData.title || !courseData.description) {
+      return NextResponse.json({ error: 'Title and description are required' }, { status: 400 })
+    }
 
-    await course.save();
-    return NextResponse.json(course, { status: 201 });
+    const newCourse = await addCourse(courseData)
+    return NextResponse.json(newCourse, { status: 201 })
   } catch (error) {
-    return NextResponse.json({ error: `Error fetching courses ${error}` }, { status: 500 });
+    console.error('Error adding course:', error)
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }
+
+

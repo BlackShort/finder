@@ -1,6 +1,6 @@
 {
   "name": "finderx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
+    "@tanstack/react-query": "^5.63.0",
     "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
     "class-variance-authority": "^0.7.1",
@@ -23,6 +24,7 @@
     "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
+    "react-intersection-observer": "^9.14.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "use-debounce": "^10.0.4"
