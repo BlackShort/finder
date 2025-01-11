@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, Star, BookOpen, Award, ExternalLink, Calendar } from 'lucide-react';
 import axios from 'axios';
 import { Course } from '@/types/course';
+import { ShareButton } from '@/components/ShareButton';
 
 interface Params {
   id: string;
@@ -50,11 +51,14 @@ export default function CoursePage({ params }: { params: Params }) {
 
   return (
     <div className="mx-auto px-6 py-6">
-      <Link href="/" passHref>
-        <Button variant="default" className="mb-6 transition-colors duration-200">
-          <ArrowLeft className="mr-2 h-5 w-5" /> Back to Courses
-        </Button>
-      </Link>
+      <div className="flex justify-between items-center mb-6">
+        <Link href="/" passHref>
+          <Button variant="default">
+            <ArrowLeft className="mr-2 h-5 w-5" /> Back to Courses
+          </Button>
+        </Link>
+        <ShareButton courseId={course.id} courseTitle={course.title} variant={"outline"} size={"sm"} />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-2xl">

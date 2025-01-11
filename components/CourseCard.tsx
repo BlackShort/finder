@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Clock, Rocket } from 'lucide-react'
 import { Course } from '@/types/course'
 import Link from 'next/link'
+import { ShareButton } from './ShareButton'
 
 export function CourseCard({ course }: { course: Course }) {
   return (
@@ -35,6 +36,7 @@ export function CourseCard({ course }: { course: Course }) {
             <Rocket className="w-4 h-4 mr-2" />
             <span>{course.careerOpportunities.length} career paths</span>
           </div>
+          <ShareButton courseId={course.id} courseTitle={course.title} variant={"ghost"} size={"icon"} />
         </div>
         <Link href={`/courses/${course.id}`} className="w-full">
           <Button variant="default" className="w-full">View Details</Button>
