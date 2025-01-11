@@ -60,9 +60,9 @@ export function Navbar() {
                             <div className="flex items-center space-x-2">
                                 <Dialog>
                                     <DialogTrigger asChild>
-                                        <Button variant="ghost" size="sm" className="hidden md:flex">
+                                        <Button variant="ghost" size="sm">
                                             <FileText className="h-5 w-5" />
-                                            Resource
+                                            <span className='hidden md:flex'></span>
                                         </Button>
                                     </DialogTrigger>
                                     <CourseModal />
