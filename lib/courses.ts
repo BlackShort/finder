@@ -64,7 +64,7 @@ export async function addCourse(course: Course) {
     const db = client.db("finderx")
     const coursesCollection = db.collection("courses")
 
-    const courseWithObjectId = { ...course, _id: new ObjectId(course._id), timestamp: new Date().toISOString() }
+    const courseWithObjectId = { ...course, _id: new ObjectId(course.id), timestamp: new Date().toISOString() }
     const result = await coursesCollection.insertOne(courseWithObjectId)
     return {
         ...course,

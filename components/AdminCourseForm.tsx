@@ -10,7 +10,7 @@ import { Course } from '@/types/course'
 export function AdminCourseForm() {
   // Initialize course state with the correct type
   const [course, setCourse] = useState<Course>({
-    _id: '',
+    id: '',
     title: '',
     description: '',
     contentOutline: [],
@@ -38,7 +38,7 @@ export function AdminCourseForm() {
 
     if (response.ok) {
       setCourse({
-        _id: '',
+        id: '',
         title: '',
         description: '',
         contentOutline: [],
