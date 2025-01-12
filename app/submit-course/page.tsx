@@ -55,18 +55,16 @@ export default function CourseSubmissionForm() {
         setIsSubmitting(true)
 
         try {
-            const dataToSubmit = {
-                ...formData,
-                access_key: process.env.WEB3FORMS_ACCESS_KEY,
-            };
-
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json",
+                    Accept: "application/json"
                 },
-                body: JSON.stringify(dataToSubmit),
+                body: JSON.stringify({
+                    ...formData,
+                    access_key: process.env.NEXT_PUBLIC_ACCESS_KEY_FORM,
+                }),
             });
             const result = await response.json();
             if (result.success) {
@@ -99,7 +97,7 @@ export default function CourseSubmissionForm() {
         <div className="flex items-center justify-center h-screen">
             <form
                 onSubmit={handleSubmit}
-                className="shadow-lg rounded-lg p-8 w-full max-w-xl space-y-6 border border-gray-200"
+                className="shadow-lg rounded-lg p-4 md:p-8 m-4 md:m-0 w-full max-w-xl space-y-6 border border-gray-200"
             >
                 <h1 className="text-3xl font-bold text-gray-800 text-center">
                     Course Submission

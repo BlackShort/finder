@@ -14,7 +14,7 @@ interface PageData {
   nextCursor: string | null
 }
 
-const ITEMS_PER_PAGE = 9
+const ITEMS_PER_PAGE = 12
 
 export function CourseList() {
   const { debouncedSearch } = useSearch()

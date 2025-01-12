@@ -4,7 +4,7 @@ import { getCourses, addCourse } from '@/lib/courses'
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const cursor = searchParams.get('cursor') || ''
-  const limit = parseInt(searchParams.get('limit') || '20', 10)
+  const limit = parseInt(searchParams.get('limit') || '12', 10)
   const search = searchParams.get('search') || ''
 
   const { courses, nextCursor } = await getCourses(cursor, limit, search)

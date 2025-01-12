@@ -2,7 +2,7 @@ import clientPromise from '@/db/mongodb'
 import { Course } from '@/types/course'
 import { ObjectId } from 'mongodb'
 
-export async function getCourses(cursor = '', limit = 20, search = '') {
+export async function getCourses(cursor = '', limit = 12, search = '') {
     const client = await clientPromise
     const db = client.db("finderx")
     const coursesCollection = db.collection("courses")

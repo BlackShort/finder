@@ -20,29 +20,28 @@ export default function CourseRequestForm() {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setIsSubmitting(true)
 
         try {
-            const dataToSubmit = {
-                ...formData,
-                access_key: process.env.WEB3FORMS_ACCESS_KEY,
-            };
-
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json",
+                    Accept: "application/json"
                 },
-                body: JSON.stringify(dataToSubmit),
+                body: JSON.stringify({
+                    ...formData,
+                    access_key: process.env.NEXT_PUBLIC_ACCESS_KEY_FORM,
+                }),
             });
             const result = await response.json();
             if (result.success) {
                 toast({
                     title: "Course request submitted",
-                    description: "Thank you for your request. We&apos;ll get back to you soon!",
+                    description: "Thank you for your request. We'll get back to you soon!",
                 })
                 setFormData({ name: '', email: '', courseDetails: '' })
             } else {
@@ -53,8 +52,8 @@ export default function CourseRequestForm() {
                 title: "Error",
                 description: "There was a problem submitting your request. Please try again.",
                 variant: "destructive",
-            })
-            console.log(error);
+            });
+            console.log(error)
         } finally {
             setIsSubmitting(false)
         }
@@ -65,7 +64,7 @@ export default function CourseRequestForm() {
         <div className="flex items-center justify-center h-[80vh]">
             <form
                 onSubmit={handleSubmit}
-                className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl space-y-6"
+                className="shadow-lg rounded-lg p-4 md:p-8 m-4 md:m-0 w-full max-w-xl space-y-6 border border-gray-200"
             >
                 <div>
                     <h1 className="text-2xl font-semibold text-gray-800 text-center">Course Request Form</h1>

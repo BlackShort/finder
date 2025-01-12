@@ -62,7 +62,7 @@ export function Navbar() {
                                     <DialogTrigger asChild>
                                         <Button variant="ghost" size="sm">
                                             <FileText className="h-5 w-5" />
-                                            <span className='hidden md:flex'></span>
+                                            <span className='hidden md:flex'>Resource</span>
                                         </Button>
                                     </DialogTrigger>
                                     <CourseModal />
