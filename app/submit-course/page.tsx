@@ -17,6 +17,7 @@ export default function CourseSubmissionForm() {
         courseDescription: "",
         contentOutline: [""],
         resources: [""],
+        videos: [""],
         careerOpportunities: [""],
     })
 
@@ -78,6 +79,7 @@ export default function CourseSubmissionForm() {
                     courseDescription: "",
                     contentOutline: [""],
                     resources: [""],
+                    videos: [""],
                     careerOpportunities: [""],
                 })
             } else {
@@ -194,6 +196,42 @@ export default function CourseSubmissionForm() {
                                     type="button"
                                     variant="ghost"
                                     onClick={() => removeField("resources", index)}
+                                    className="p-2"
+                                >
+                                    <TrashIcon className="w-5 h-5 text-red-500" />
+                                </Button>
+                            )}
+                        </div>
+                    ))}
+                </div>
+
+                {/* Videos */}
+                <div>
+                    <Label htmlFor="videos" className="block text-sm font-medium text-gray-700">
+                        Videos
+                    </Label>
+                    {formData.videos.map((item, index) => (
+                        <div key={index} className="flex items-center space-x-2 mt-2">
+                            <Input
+                                value={item}
+                                onChange={(e) => handleArrayChange(e, "videos", index)}
+                                placeholder={`Video ${index + 1}`}
+                                className="flex-1 rounded-md border-gray-300 focus:border-neutral-500 focus:ring-neutral-500 sm:text-sm"
+                            />
+                            {index === formData.resources.length - 1 ? (
+                                <Button
+                                    type="button"
+                                    variant="ghost"
+                                    onClick={() => addField("videos")}
+                                    className="p-2"
+                                >
+                                    <PlusIcon className="w-5 h-5 text-neutral-500" />
+                                </Button>
+                            ) : (
+                                <Button
+                                    type="button"
+                                    variant="ghost"
+                                        onClick={() => removeField("videos", index)}
                                     className="p-2"
                                 >
                                     <TrashIcon className="w-5 h-5 text-red-500" />

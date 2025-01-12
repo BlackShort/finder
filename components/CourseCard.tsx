@@ -8,7 +8,7 @@ import { ShareButton } from './ShareButton'
 
 export function CourseCard({ course }: { course: Course }) {
   return (
-    <Card className="flex flex-col h-full transition-all shadow-bottom hover:scale-[1.02] hover:transition-all">
+    <Card className="flex flex-col h-full cursor-default transition-all shadow-bottom hover:scale-[1.02] hover:transition-all">
       <CardHeader className="p-0">
         <div className="relative w-full h-40">
           <Image
@@ -27,16 +27,16 @@ export function CourseCard({ course }: { course: Course }) {
         <p className="text-sm text-muted-foreground">{course.description}</p>
       </CardContent>
       <CardFooter className="flex flex-col gap-4 p-4">
-        <div className="flex items-baseline justify-between w-full gap-4">
+        <div className="flex items-baseline justify-between w-full gap-3">
           <div className="flex items-center text-sm text-muted-foreground">
             <Clock className="w-4 h-4 mr-2" />
             <span>{course.timeline}</span>
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <Rocket className="w-4 h-4 mr-2" />
-            <span>{course.careerOpportunities.length} career paths</span>
+            <span>{course.careerOpportunities.length} careers</span>
           </div>
-          <ShareButton courseId={course.id} courseTitle={course.title} variant={"ghost"} size={"icon"} />
+          <ShareButton courseId={course.id} courseTitle={course.title} size={"icon"} />
         </div>
         <Link href={`/courses/${course.id}`} className="w-full">
           <Button variant="default" className="w-full">View Details</Button>

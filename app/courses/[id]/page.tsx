@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, Star, BookOpen, Award, ExternalLink, Calendar } from 'lucide-react';
+import { ArrowLeft, Clock, Star, BookOpen, Award, ExternalLink, Calendar, TvMinimalPlay } from 'lucide-react';
 import axios from 'axios';
 import { Course } from '@/types/course';
 import { ShareButton } from '@/components/ShareButton';
@@ -57,7 +57,7 @@ export default function CoursePage({ params }: { params: Params }) {
             <ArrowLeft className="mr-2 h-5 w-5" /> Back to Courses
           </Button>
         </Link>
-        <ShareButton courseId={course.id} courseTitle={course.title} variant={"outline"} size={"sm"} />
+        <ShareButton courseId={course.id} courseTitle={course.title} size={"sm"} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -152,6 +152,28 @@ export default function CoursePage({ params }: { params: Params }) {
             ))}
           </ul>
         </div>
+
+        <div className="p-8 bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 rounded-xl shadow-md space-y-6">
+          <h2 className="text-2xl font-semibold text-gray-800">Videos</h2>
+          <ul className="space-y-4">
+            {course?.videos?.map((video, index) => (
+              <li key={index} className="flex items-center space-x-4">
+                <TvMinimalPlay className="w-6 h-6 text-blue-500 flex-shrink-0" />
+                <a
+                  href={video}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 text-base hover:text-blue-500 transition-colors duration-200 flex items-center space-x-2 overflow-hidden"
+                >
+                  <span className="truncate max-w-xs">{video.split('//')[1]}</span>
+                  <ExternalLink className="w-5 h-5 text-blue-500" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+
       </div>
     </div>
   );

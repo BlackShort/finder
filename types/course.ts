@@ -4,6 +4,7 @@ export interface Course {
     description: string
     contentOutline: string[]
     resources: string[]
+    videos: string[]
     timeline: string
     careerOpportunities: string[]
     tags: string[]
