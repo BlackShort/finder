@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { key } from '@/lib/utils'
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { useToast } from '@/hooks/use-toast'
@@ -34,7 +35,7 @@ export default function CourseRequestForm() {
                 },
                 body: JSON.stringify({
                     ...formData,
-                    access_key: process.env.NEXT_PUBLIC_ACCESS_KEY_FORM,
+                    access_key: key,
                 }),
             });
             const result = await response.json();
