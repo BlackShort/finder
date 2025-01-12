@@ -24,7 +24,7 @@ export function CourseCard({ course }: { course: Course }) {
       </CardHeader>
       <CardContent className="flex-grow px-4 pt-4 pb-0">
         <CardTitle className="text-xl mb-2">{course.title.length > 24 ? course.title.slice(0, 24) + '...' : course.title}</CardTitle>
-        <p className="text-sm text-muted-foreground">{course.description}</p>
+        <p className="text-sm text-muted-foreground">{course.description.length > 70 ? course.description.slice(0, 70) + '...' : course.description}</p>
       </CardContent>
       <CardFooter className="flex flex-col gap-4 p-4">
         <div className="flex items-baseline justify-between w-full gap-3">
