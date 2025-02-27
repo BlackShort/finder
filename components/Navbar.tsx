@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { SearchBar } from './SearchBar'
 import { Button } from "@/components/ui/button"
-import { FileText, Search, User } from 'lucide-react'
+import { FileText, Search, User, Zap } from 'lucide-react'
 import Image from 'next/image'
 import learning from '@/app/icon.png'
 import Link from 'next/link'
@@ -71,6 +71,11 @@ export function Navbar() {
                                 <Button variant="ghost" size="sm" onClick={() => setShowSearch(true)}>
                                     <Search className="h-7 w-7" />
                                 </Button>
+                                <Link href={'https://scrapperx.vercel.app/'}>
+                                    <Button variant="ghost" size="sm" title='Scrapper'>
+                                        <Zap className="h-7 w-7" />
+                                    </Button>
+                                </Link>
                                 <Button variant="ghost" size="sm">
                                     <User className="h-7 w-7" />
                                 </Button>

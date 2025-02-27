@@ -73,10 +73,44 @@ export async function addCourse(course: Course) {
     }
 }
 
+// export async function updateCourse(id: string, updatedCourse: Partial<Course>) {
+//     const client = await clientPromise;
+//     const db = client.db("finderx");
+//     const coursesCollection = db.collection("courses");
+
+//     const existingCourse = await coursesCollection.findOne({ _id: new ObjectId(id) });
+//     if (!existingCourse) {
+//         console.log("Course not found with ID:", id);
+//         return null;
+//     }
+
+//     const result = await coursesCollection.findOneAndUpdate(
+//         { _id: new ObjectId(id) },
+//         { $set: updatedCourse },
+//         { returnDocument: 'after' }
+//     );
+
+//     if (result && result.value) {
+//         return {
+//             ...result.value,
+//             id: result.value._id.toString(),
+//             _id: undefined
+//         };
+//     }
+
+//     return null;
+// }
+
 export async function updateCourse(id: string, updatedCourse: Partial<Course>) {
     const client = await clientPromise;
     const db = client.db("finderx");
     const coursesCollection = db.collection("courses");
+
+    // Check if the provided id is a valid ObjectId
+    if (!ObjectId.isValid(id)) {
+        console.log("Invalid ObjectId:", id);
+        return null;
+    }
 
     const existingCourse = await coursesCollection.findOne({ _id: new ObjectId(id) });
     if (!existingCourse) {
@@ -101,6 +135,7 @@ export async function updateCourse(id: string, updatedCourse: Partial<Course>) {
     return null;
 }
 
+
 export async function deleteCourse(id: string) {
     const client = await clientPromise
     const db = client.db("finderx")
@@ -108,4 +143,3 @@ export async function deleteCourse(id: string) {
 
     await coursesCollection.deleteOne({ _id: new ObjectId(id) })
 }
-
